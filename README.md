@@ -18,7 +18,7 @@ Then, use R to make various summary, etc. tables that can be saved as worksheets
 ## The Steps ##
 
 1. Manually export (or have someone export) current posts from the WP dashboard.
-![](https://i.imgur.com/RE5XCaL.png)
+![](https://i.imgur.com/RE5XCaL.png)<br>
 XML from WP: `sample-exported-from-wp.xml`
 1. Run an XSLT script on the exported XML.<br>
 Script: `flatten-wp-xml.xslt` <br>
