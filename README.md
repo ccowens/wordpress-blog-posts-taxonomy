@@ -1,7 +1,7 @@
 # Processing Wordpress Blog Post Taxonomy #
 This is a demo of using XSLT and R to process a download of posts from WP into an Excel workbook for analyzing categories and tags.
 ## The Basic Idea ##
-Use XSLT on the Wordpress XML to select what you want and flatten the structure so it's easier to bring in as a table into R. Combine multiple child items into one item separated by commas (for XSLT 1.0 compatibility use clunky version of XSLT 2.0 `string-join()`). Then, bring it into R using the tidyr package to unpack the comma-separated items into multiple rows. For example:
+Use XSLT on the Wordpress XML to select what you want and flatten the structure so it's easier to bring in as a table into R. Combine multiple child items into one item separated by commas (for XSLT 1.0 compatibility, use clunky for-loop instead of XSLT 2.0's `string-join()`). Then, bring it into R, using the tidyr package to unpack the comma-separated items into multiple rows. For example:
 
 Color | Fruit
 ------|-------------
