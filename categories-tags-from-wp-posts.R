@@ -1,3 +1,8 @@
+#make sure there is a designated mirror for running as a script 
+local({r <- getOption("repos")
+r["CRAN"] <- "https://cloud.r-project.org/" 
+options(repos=r)
+})
 if(!require(XML)) {install.packages("XML"); library(XML)} #xmlParse() xmlTODataFrame()
 if(!require(lubridate)) {install.packages("lubridate"); library(lubridate)} #parse_date_time()
 if(!require(tidyr)) {install.packages("tidyr"); library(tidyr)} #separate_rows
