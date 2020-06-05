@@ -1,5 +1,6 @@
 # Processing Wordpress Blog Post Taxonomy #
-This is a demo of using XSLT and R to process a download of posts from WP into an Excel workbook for analyzing categories and tags.
+This is a demo of using XSLT and R to process a download of posts from WP into an Excel workbook for analyzing categories and tags (mostly).
+
 ## The Basic Idea ##
 Use XSLT on the Wordpress XML to select what you want and flatten the structure so it's easier to bring in as a table into R. Combine multiple child items into one item separated by commas (for XSLT 1.0 compatibility, use clunky for-loop instead of XSLT 2.0's `string-join()`). Then, bring it into R, using the tidyr package to unpack the comma-separated items into multiple rows. For example:
 
@@ -37,5 +38,30 @@ I use the [free open source version of Saxon](http://saxon.sourceforge.net/) for
 
 ### R ###
 
-For this example batch file, I use the command-line script runner from the free open source [R statistical computing language](https://www.r-project.org/), but usually I just use the [free open source version of RStudio](https://www.rstudio.com/products/RStudio/#Desktop) for working with R.
+For this example batch file, I use the command-line script runner from the free open source [R statistical computing language](https://www.r-project.org/), but usually I just use the [free open source version of RStudio](https://www.rstudio.com/products/RStudio/#Desktop) for working with R interactively.
+
+## The Result
+
+### Sheets within the Output Excel File
+
+- Main
+- Posts by Category
+- Category Count
+- Posts by Tag
+- Tag Count
+
+### Columns in the Main Sheet
+
+- Post title
+- Summary (from excerpt)
+- Date published
+- Categories
+- Tags
+- Path part of the URL
+
+## Notes
+
+There's no standard way to set what should be the meta description for a post in Wordpress that would be findable in the XML export file. SEO plug-ins have there own ways. In the example I've used the excerpt:extended tag, because it's based on a standard optional feature. 
+
+I know I could use the list of post URLs and just scrape that actual meta description tag, but that would require a lot of banging away at the site that I would prefer to avoid. Also it assumes a meta description always exists. 
 
