@@ -53,15 +53,16 @@ For this example batch file, I use the command-line script runner from the free 
 ### Columns in the Main Sheet
 
 - Post title
-- Summary (from excerpt)
 - Date published
+- Yoast SEO meta description
+- Excerpt
 - Categories
 - Tags
 - Path part of the URL
 
 ## Notes
 
-There's no standard way to set what should be the meta description for a post in Wordpress that would be findable in the XML export file. SEO plug-ins have there own ways. In the example I've used the excerpt:extended tag, because it's based on a standard optional feature. 
+There's no standard way to set what should be the meta description for a post in Wordpress that would be findable in the XML export file. SEO plug-ins have there own ways. In the example I've used the excerpt:extended tag, because it's based on a standard optional feature. I've also changed the script so it pulls in any Yoast SEO meta description since that's in the sample. 
 
 I know I could use the list of post URLs and just scrape that actual meta description tag, but that would require a lot of banging away at the site that I would prefer to avoid. Also it assumes a meta description always exists. 
 
