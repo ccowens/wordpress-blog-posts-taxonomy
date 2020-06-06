@@ -45,7 +45,7 @@ For this example batch file, I use the command-line script runner from the free 
 ### Sheets within the Output Excel File
 
 - Main
-- Posts by Category
+- Posts by Category [includes flag for multiple category assignment]
 - Category Count
 - Posts by Tag
 - Tag Count
