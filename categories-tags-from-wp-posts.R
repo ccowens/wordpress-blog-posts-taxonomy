@@ -37,8 +37,8 @@ wp_posts$linked_title <- gsub("\"", "\"\"", wp_posts$title) #escape the double q
 wp_posts$linked_title <- xl_hyperlink(wp_posts$link, name = wp_posts$linked_title)
 
 #order the columns and sort
-wp_posts <- select(wp_posts, linked_title, summary, date, category, tag, url_path) %>% 
-   arrange(date)
+wp_posts <- select(wp_posts, linked_title, date, yoast_metadesc, excerpt, category, tags, url_path) %>% 
+   arrange(desc(date))
 
 # Posts by Categories worksheet --------------------------------------------
 
@@ -67,16 +67,16 @@ wp_categories_ranked <- wp_categories %>%
 #grab a list of post/tag pairs taking into account there can be more than one tag for
 #each post which will be a comma-separated list in the tag column that can be expanded as multiple rows
 wp_tags <- wp_posts %>%
-   select(tag, linked_title) %>%
+   select(tags, linked_title) %>%
    #split up by tags into multiple rows sharing the same title
-   separate_rows(tag, sep = ",") %>%
+   separate_rows(tags, sep = ",") %>%
    #sort by tag used
-   arrange(desc(tag))
+   arrange(desc(tags))
 
 # Tag Count worksheet -----------------------------------------------------
 
 wp_tags_ranked <- wp_tags %>%
-   group_by(tag) %>%
+   group_by(tags) %>%
    #summarize tags by count like a pivot table
    summarise(tag_count=n()) %>%
    #sort tags by count highest first
