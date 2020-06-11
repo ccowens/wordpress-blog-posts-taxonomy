@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
                           xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
-                          xmlns:wp="http://wordpress.org/export/1.2/">
+                          xmlns:wp="http://wordpress.org/export/1.2/"
+                          xmlns:dc="http://purl.org/dc/elements/1.1/">
 <xsl:output method="xml" indent="yes"/>
 
 <!--
 Read selected Wordpress XML elements and organize in an XML that will be easy to convert to a dataframe in R
 -->
+
+
+<!-- Set up an index of authors by the login to lookup the display name for listing as an author -->
+<xsl:key name="authors" match="wp:author" use="wp:author_login"/>
 
 <xsl:template match="/">
   <posts>
@@ -18,6 +23,7 @@ Read selected Wordpress XML elements and organize in an XML that will be easy to
     <item>
       <title><xsl:value-of select="title"/></title>
       <date><xsl:value-of select="pubDate"/></date>
+      <author><xsl:value-of select="key('authors',dc:creator)/wp:author_display_name"/></author>
       <link><xsl:value-of select="link"/></link>
       <yoast_metadesc>
         <xsl:value-of select="wp:postmeta/wp:meta_key[text()='_yoast_wpseo_metadesc']/following-sibling::node()/text()"/>
@@ -39,7 +45,7 @@ Read selected Wordpress XML elements and organize in an XML that will be easy to
       <xsl:apply-templates/>
     </item>  
 </xsl:template>
-  
+
 <xsl:template match="@* | text()"/>
   
 </xsl:stylesheet>

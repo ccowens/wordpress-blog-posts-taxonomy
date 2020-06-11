@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <posts xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
-       xmlns:wp="http://wordpress.org/export/1.2/">
+       xmlns:wp="http://wordpress.org/export/1.2/"
+       xmlns:dc="http://purl.org/dc/elements/1.1/">
    <item>
       <title>An Overview of the Innovation Lab by Exadel</title>
       <date>Tue, 02 Jul 2019 23:52:38 +0000</date>
+      <author>Dmitry Binunsky</author>
       <link>https://www.exadel.com/news/an-overview-of-the-innovation-lab/</link>
       <yoast_metadesc>The Innovation Lab allows companies to not waste precious resources on completed implementations of new technologies that may not have sufficient ROI.</yoast_metadesc>
       <excerpt>The Innovation Lab allows companies to try out implementations of new technologies to better evaluate potential ROI.</excerpt>
@@ -13,6 +15,7 @@
    <item>
       <title>The Impact of Tech Advances in the Healthcare Industry</title>
       <date>Tue, 09 Jul 2019 00:51:57 +0000</date>
+      <author>Exadel Innovations Team</author>
       <link>https://www.exadel.com/news/the-impact-of-tech-advances-in-the-healthcare-industry/</link>
       <yoast_metadesc>Four recent tech innovation examples in healthcare and how they are making an impact</yoast_metadesc>
       <excerpt>Four recent tech innovation examples in healthcare and how they are making an impact</excerpt>
@@ -22,6 +25,7 @@
    <item>
       <title>How Digital Transformation Is Impacting the Sports and Fitness Industry</title>
       <date>Wed, 03 Jul 2019 23:40:58 +0000</date>
+      <author>Exadel Innovations Team</author>
       <link>https://www.exadel.com/news/how-digital-transformation-is-impacting-the-sports-and-fitness-industry/</link>
       <yoast_metadesc>The sports &amp; fitness industry has been at the forefront of technology implementation in the enterprise and capitalizing on digital transformation has provided them with great success.</yoast_metadesc>
       <excerpt>The sports &amp; fitness industry has been at the forefront of technology implementation in the enterprise and capitalizing on digital transformation has provided them with great success.</excerpt>
@@ -31,6 +35,7 @@
    <item>
       <title>Women in STEM at Exadel: Mary Frances Czarsty, Senior UX/UI Designer</title>
       <date>Tue, 09 Jul 2019 22:05:59 +0000</date>
+      <author>Exadel Innovations Team</author>
       <link>https://www.exadel.com/news/women-in-stem-at-exadel-mary-frances-senior-ux-ui-designer/</link>
       <yoast_metadesc>Here is another installment in our series about the amazing stories, innovation, and contributions of the women in STEM jobs at Exadel.</yoast_metadesc>
       <excerpt>Here is another installment in our series about the amazing stories, innovation, and contributions of the women in STEM jobs at Exadel.</excerpt>
@@ -40,6 +45,7 @@
    <item>
       <title>AEM Tip: Merging on Fields with Different Names</title>
       <date>Tue, 16 Jul 2019 23:11:16 +0000</date>
+      <author>Denis Glushkov</author>
       <link>https://www.exadel.com/news/aem-tip-merging-on-fields-with-different-names/</link>
       <yoast_metadesc>This AEM tip from our Exadel Digital Marketing Technology team is all about using the coalesce command to make merges of slightly different data sets easier</yoast_metadesc>
       <excerpt>This AEM tip from our Exadel Digital Marketing Technology team is all about using the coalesce command to make merges of slightly different data sets easier.</excerpt>
@@ -49,6 +55,7 @@
    <item>
       <title>Recap: Innovation Lab 2020 What Innovating the Future Looks Like</title>
       <date>Wed, 17 Jul 2019 00:37:16 +0000</date>
+      <author>Exadel Innovations Team</author>
       <link>https://www.exadel.com/news/recap-innovation-lab-2020-what-innovating-the-future-looks-like/</link>
       <yoast_metadesc>How are organizations testing emerging technologies while keeping their core business functioning? Innovation labs can be the answer.</yoast_metadesc>
       <excerpt>How are organizations testing emerging technologies while keeping their core business functioning? Innovation labs can be the answer.</excerpt>
@@ -58,6 +65,7 @@
    <item>
       <title>Introducing CrossKube: Deploy a Kubernetes Environment in Any Cloud, Fast</title>
       <date>Tue, 30 Jul 2019 00:31:39 +0000</date>
+      <author>Exadel Innovations Team</author>
       <link>https://www.exadel.com/news/introducing-crosskube-deploy-a-kubernetes-environment-in-any-cloud-fast/</link>
       <yoast_metadesc>CrossKube is a culmination of years of experience and experimentation with Kubernetes deployments in the cloud.</yoast_metadesc>
       <excerpt>CrossKube is a culmination of years of experience and experimentation with Kubernetes deployments in the cloud.</excerpt>
@@ -67,6 +75,7 @@
    <item>
       <title>The Benefits of Agile Software Development and How to Measure Them</title>
       <date>Wed, 21 Aug 2019 23:44:32 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/the-benefits-of-agile-software-development-and-how-to-measure-them/</link>
       <yoast_metadesc>There are some major benefits from Agile when it comes to helping the bottom line, etc., but being able to measure these benefits can be the key to success.</yoast_metadesc>
       <excerpt>There are some major benefits from Agile when it comes to helping the bottom line, etc., but being able to measure these benefits can be the key to success. </excerpt>
@@ -76,6 +85,7 @@
    <item>
       <title>AEM Tip: Automating Verification in AEM Author</title>
       <date>Mon, 05 Aug 2019 23:37:06 +0000</date>
+      <author>Olga Zhuravleva</author>
       <link>https://www.exadel.com/news/aem-tip-automating-verification-in-aem-author/</link>
       <yoast_metadesc>This AEM tip from our Exadel Digital Marketing Technology team is all about using the coalesce command to make merges of slightly different data sets easier</yoast_metadesc>
       <excerpt>This AEM tip from our Exadel Digital Marketing Technology team is all about automated testing for the back-end authoring component.</excerpt>
@@ -85,6 +95,7 @@
    <item>
       <title>Digital Transformation for Toll Road Authorities: Past • Present • Future</title>
       <date>Tue, 06 Aug 2019 18:53:43 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/digital-transformation-in-toll-road-authorities-past-%e2%80%a2-present-%e2%80%a2-future/</link>
       <yoast_metadesc>How toll road systems have changed and which emerging technologies are impacting the industry now</yoast_metadesc>
       <excerpt>Take a look at how toll road systems have changed and which emerging technologies are impacting the industry now.</excerpt>
@@ -94,6 +105,7 @@
    <item>
       <title>Women in STEM at Exadel: Polina Antipova, Delivery Manager and Scrum Master</title>
       <date>Tue, 06 Aug 2019 23:17:29 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/women-in-stem-at-exadel-polina-antipova-delivery-manager-and-scrum-master/</link>
       <yoast_metadesc>Here is another installment in our series about the amazing stories, innovation, and contributions of the women in STEM jobs at Exadel.</yoast_metadesc>
       <excerpt>Here is another installment in our series about the amazing stories, innovation, and contributions of the women in STEM jobs at Exadel.</excerpt>
@@ -103,6 +115,7 @@
    <item>
       <title>To Bet or Not to Bet...on Digital Transformation: 3 Trends Reshaping the Gambling Industry</title>
       <date>Wed, 21 Aug 2019 22:13:39 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/to-bet-or-not-to-bet-on-digital-transformation-3-trends-reshaping-the-gambling-industry/</link>
       <yoast_metadesc>Many industries are driving better customer experience and customer satisfaction via digital transformation. The gambling industry should be no exception.</yoast_metadesc>
       <excerpt>Many industries are driving better customer experience and customer satisfaction via digital transformation. The gambling industry should be no exception.</excerpt>
@@ -112,6 +125,7 @@
    <item>
       <title>CrossKube Q&amp;A: Rapid Deployment of Environments to Any Cloud</title>
       <date>Wed, 28 Aug 2019 22:44:45 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/crosskube-qa-rapid-deployment-of-environments-to-any-cloud/</link>
       <yoast_metadesc>We sat down with InData Labs CTO Alexey Tsiunchik to discuss the ways our Kubernetes deployment solution, CrossKube, can help support InData’s initiatives.</yoast_metadesc>
       <excerpt>We sat down with InData Labs CTO Alexey Tsiunchik to discuss the ways our Kubernetes deployment solution, CrossKube, can help support InData’s initiatives.</excerpt>
@@ -121,6 +135,7 @@
    <item>
       <title>Classic to Touch UI Migration for Adobe Experience Manager</title>
       <date>Fri, 06 Sep 2019 17:33:01 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/classic-to-touch-ui-migration-for-adobe-experience-manager/</link>
       <yoast_metadesc>Our Digital Marketing Technology team shares some important lessons learned in upgrading to the newer Touch UI in Adobe Experience Manager</yoast_metadesc>
       <excerpt>Sharing some important lessons learned in the front lines, upgrading to the newer Touch UI in Adobe Experience Manager</excerpt>
@@ -130,6 +145,7 @@
    <item>
       <title>Emerging Technology Convergence: Is It Fact or Fiction?</title>
       <date>Fri, 06 Sep 2019 18:33:38 +0000</date>
+      <author>Lev Shur</author>
       <link>https://www.exadel.com/news/emerging-technology-convergence-is-it-fact-or-fiction/</link>
       <yoast_metadesc>Our Exadel Solutions President concisely discusses the extent and implications of technology convergence along with how you should approach the issue.</yoast_metadesc>
       <excerpt>Our Exadel Solutions President concisely discusses the extent and implications of technology convergence along with how you should approach the issue.</excerpt>
@@ -139,6 +155,7 @@
    <item>
       <title>Looking Behind the Curtain at Digital Marketing Technology Trends</title>
       <date>Fri, 06 Sep 2019 20:18:18 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/looking-behind-the-curtain-at-digital-marketing-technology-trends/</link>
       <yoast_metadesc>Digital marketing strategy is all about harnessing massive amounts of customer data. What are the emerging technologies and tools that will help us do this?</yoast_metadesc>
       <excerpt>Digital marketing strategy is all about harnessing a massive amount of customer and potential customer  data. What are the emerging technologies and tools that will help us do this?</excerpt>
@@ -148,6 +165,7 @@
    <item>
       <title>Women in STEM at Exadel: Daria Rieznik, Lead QA Engineer</title>
       <date>Mon, 09 Sep 2019 17:16:28 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/women-in-stem-at-exadel-daria-rieznik-lead-qa-engineer/</link>
       <yoast_metadesc>Here is another installment in our series about the amazing stories, innovation, and contributions of the women in STEM jobs at Exadel.</yoast_metadesc>
       <excerpt>Here is another installment in our series about the amazing stories, innovation, and contributions of the women in STEM jobs at Exadel.</excerpt>
@@ -157,6 +175,7 @@
    <item>
       <title>AEM Tip: JUnit Tests for WCMUsePojo Objects</title>
       <date>Mon, 09 Sep 2019 20:24:42 +0000</date>
+      <author>Alexander Bestsenny</author>
       <link>https://www.exadel.com/news/aem-tip-junit-tests-for-wcmusepojo-objects/</link>
       <yoast_metadesc>This AEM tip from our Exadel Digital Marketing Technology team is all about solving the complexities of unit testing components in AEM.</yoast_metadesc>
       <excerpt>This AEM tip from our Exadel Digital Marketing Technology team is all about solving the complexities of unit testing components in AEM.</excerpt>
@@ -166,6 +185,7 @@
    <item>
       <title>Introducing the Adobe Experience Manager Authoring Toolkit</title>
       <date>Mon, 16 Sep 2019 21:41:07 +0000</date>
+      <author>Lev Shur</author>
       <link>https://www.exadel.com/news/introducing-the-adobe-experience-manager-authoring-toolkit/</link>
       <yoast_metadesc>Adobe Experience Manager Authoring Toolkit is a customizable open source package for smoothly generating AEM components (XML) from Java.</yoast_metadesc>
       <excerpt>Adobe Experience Manager Authoring Toolkit is a customizable open source package for smoothly generating AEM components (XML) from Java.</excerpt>
@@ -175,6 +195,7 @@
    <item>
       <title>How to Take Advantage of Globally Dispersed IT Teams</title>
       <date>Tue, 24 Sep 2019 18:27:22 +0000</date>
+      <author>Lev Shur</author>
       <link>https://www.exadel.com/news/how-to-take-advantage-of-globally-dispersed-it-teams/</link>
       <yoast_metadesc>Here a few pointers on tapping Into global tech talent and managing that talent for best results from the President of Exadel Solutions.</yoast_metadesc>
       <excerpt>Here a few pointers on tapping Into global tech talent and managing that talent for best results.</excerpt>
@@ -184,6 +205,7 @@
    <item>
       <title>Our DevOps Toolbox: Ansible</title>
       <date>Mon, 30 Sep 2019 18:33:05 +0000</date>
+      <author>Exadel Digital Transformation Team</author>
       <link>https://www.exadel.com/news/our-devops-toolbox-ansible/</link>
       <yoast_metadesc>Exadel significantly cuts infrastructure configuration time using Redhat Ansible. Our Digital Transformation Team explains how.</yoast_metadesc>
       <excerpt>Exadel significantly cuts infrastructure configuration time using Redhat Ansible. Our Digital Transformation Team explains how.</excerpt>
@@ -193,6 +215,7 @@
    <item>
       <title>Beyond Building Software: Agile as an Organization-Wide Initiative</title>
       <date>Tue, 01 Oct 2019 20:29:13 +0000</date>
+      <author>Jonathan Fries</author>
       <link>https://www.exadel.com/news/beyond-building-software-agile-as-an-organization-wide-initiative/</link>
       <yoast_metadesc>The agile methodology can be expanded beyond programming to help the company as a whole become more nimble.</yoast_metadesc>
       <excerpt>The agile methodology can be expanded beyond programming to help the company as a whole become more nimble.</excerpt>
@@ -202,6 +225,7 @@
    <item>
       <title>AEM Experience Fragments: An Introduction</title>
       <date>Tue, 08 Oct 2019 00:31:10 +0000</date>
+      <author>Iryna Ason</author>
       <link>https://www.exadel.com/news/aem-experience-fragments-an-introduction/</link>
       <yoast_metadesc>An introduction to the AEM Experience Fragment (XF) feature for the efficient organization of sections of content and presentation for use in pages</yoast_metadesc>
       <excerpt>An introduction to the AEM Experience Fragment (XF) feature for the efficient organization of sections of content and presentation for use in pages</excerpt>
@@ -211,6 +235,7 @@
    <item>
       <title>Getting More out of Multi-Cloud for the Enterprise</title>
       <date>Tue, 08 Oct 2019 19:53:34 +0000</date>
+      <author>Jonathan Fries</author>
       <link>https://www.exadel.com/news/getting-more-out-of-multi-cloud-for-the-enterprise/</link>
       <yoast_metadesc>Multi-cloud strategies have completed shifted the way enterpise IT works. With leveraging tools like CrossKube enterprises can maximize their benefits.</yoast_metadesc>
       <excerpt>Multi-cloud strategies have completed shifted the way enterpise IT works. With leveraging tools like CrossKube enterprises can maximize their benefits.</excerpt>
@@ -220,6 +245,7 @@
    <item>
       <title>Our DevOps Toolbox: The Ansible Interview</title>
       <date>Fri, 11 Oct 2019 21:38:02 +0000</date>
+      <author>Exadel Digital Transformation Team</author>
       <link>https://www.exadel.com/news/our-devops-toolbox-the-ansible-interview/</link>
       <yoast_metadesc>A conversation with Sergey Krivopshin, an Exadel DevOps engineer, about using Redhat Ansible to simplify and accelerate DevOps work</yoast_metadesc>
       <excerpt>A conversation with Sergey Krivopshin, an Exadel DevOps engineer, about using Redhat Ansible to simplify and accelerate DevOps work</excerpt>
@@ -229,6 +255,7 @@
    <item>
       <title>Agile Development for "Non-Products"</title>
       <date>Sat, 12 Oct 2019 00:32:30 +0000</date>
+      <author>Jonathan Fries</author>
       <link>https://www.exadel.com/news/agile-development-for-non-products/</link>
       <yoast_metadesc>Projects that are internal "non-products" can benefit from an agile approach and deliver great value for your organization, if adapted to the situation.</yoast_metadesc>
       <excerpt>Projects that are internal "non-products" can benefit from an agile approach and deliver great value for your organization, if adapted to the situation.</excerpt>
@@ -238,6 +265,7 @@
    <item>
       <title>Classic to Touch UI Migration for AEM: More Tips from Experience</title>
       <date>Thu, 17 Oct 2019 19:38:00 +0000</date>
+      <author>Exadel Digital Marketing Technology Team</author>
       <link>https://www.exadel.com/news/classic-to-touch-ui-migration-for-aem-more-tips-from-experience/</link>
       <yoast_metadesc>In this follow-up, our Digital Marketing Technology team shares some more detailed lessons learned in upgrading to the newer Touch UI in AEM</yoast_metadesc>
       <excerpt>In this follow-up, our Digital Marketing Technology team shares some more detailed lessons learned in upgrading to the newer Touch UI in Adobe Experience Manager</excerpt>
@@ -247,6 +275,7 @@
    <item>
       <title>Classic to Touch UI Migration for AEM: Page Properties</title>
       <date>Fri, 18 Oct 2019 22:07:48 +0000</date>
+      <author>Exadel Digital Marketing Technology Team</author>
       <link>https://www.exadel.com/news/classic-to-touch-ui-migration-for-aem-page-properties/</link>
       <yoast_metadesc>In this new installment on upgrading to the newer Touch UI in AEM, our Digital Marketing Technology team tackles the issue of Page Properties</yoast_metadesc>
       <excerpt>In this new installment on upgrading to the newer Touch UI in Adobe Experience Manager, our Digital Marketing Technology team tackles the issue of Page Properties</excerpt>
@@ -256,6 +285,7 @@
    <item>
       <title>Classic to Touch UI Migration for AEM: Multifields</title>
       <date>Fri, 18 Oct 2019 23:52:41 +0000</date>
+      <author>Liubou Masiuk</author>
       <link>https://www.exadel.com/news/classic-to-touch-ui-migration-for-aem-multifields/</link>
       <yoast_metadesc>Our Digital Marketing Technology team's sharing of lessons learned in upgrading to the newer Touch UI in AEM focuses on multifields in this post</yoast_metadesc>
       <excerpt>Our Digital Marketing Technology team’s sharing of lessons learned in upgrading to the newer Touch UI in AEM focuses on multifields in this post</excerpt>
@@ -265,6 +295,7 @@
    <item>
       <title>Our DevOps Methodologies: Continuous Integration</title>
       <date>Tue, 22 Oct 2019 19:55:33 +0000</date>
+      <author>Exadel Digital Transformation Team</author>
       <link>https://www.exadel.com/news/our-devops-methods-continuous-integration/</link>
       <yoast_metadesc>Continuous integration (CI) is an approach that automates the software development process. Find out the benefits we've seen for development and business.</yoast_metadesc>
       <excerpt>Continuous integration (CI) is an approach that automates the software development process. Find out the benefits we've seen for development and business.</excerpt>
@@ -274,6 +305,7 @@
    <item>
       <title>Our DevOps Toolbox: Kubernetes</title>
       <date>Mon, 28 Oct 2019 13:34:47 +0000</date>
+      <author>Exadel Digital Transformation Team</author>
       <link>https://www.exadel.com/news/our-devops-toolbox-kubernetes/</link>
       <yoast_metadesc>Kubernetes is a container orchestration tool for packages of code and resources. Find out the benefits we've seen using it for development and business.</yoast_metadesc>
       <excerpt>Kubernetes is a container orchestration tool for packages of code and resources. Find out the benefits we've seen using it for development and business.</excerpt>
@@ -283,6 +315,7 @@
    <item>
       <title>AEM Experience Fragments: Architecture</title>
       <date>Fri, 15 Nov 2019 20:48:49 +0000</date>
+      <author>Iryna Ason</author>
       <link>https://www.exadel.com/news/aem-experience-fragments-architecture/</link>
       <yoast_metadesc>An overview of the AEM Experience Fragment (XF) feature for the efficient organization of sections of content and presentation for use in pages</yoast_metadesc>
       <excerpt>An overview of the AEM Experience Fragment (XF) feature for the efficient organization of sections of content and presentation for use in pages</excerpt>
@@ -292,6 +325,7 @@
    <item>
       <title>Global Procurement Application: Designing an Inventory Module</title>
       <date>Tue, 26 Nov 2019 18:59:25 +0000</date>
+      <author>Alexey Chumakov</author>
       <link>https://www.exadel.com/news/global-procurement-application-designing-an-inventory-module/</link>
       <yoast_metadesc>1st in a series on our Global Procurement Application (GPA) solution, starting with design considerations for an inventory module</yoast_metadesc>
       <excerpt>1st in a series on our Global Procurement Application (GPA) solution, starting with design considerations for an inventory module</excerpt>
@@ -301,6 +335,7 @@
    <item>
       <title>Our DevOps Methodologies: The Continuous Integration Interview</title>
       <date>Wed, 27 Nov 2019 01:32:54 +0000</date>
+      <author>Exadel Digital Transformation Team</author>
       <link>https://www.exadel.com/news/our-devops-methodologies-the-continuous-integration-interview/</link>
       <yoast_metadesc>A conversation with Mikhail Аndrushkevich, Exadel's VP of Delivery, about the use and value of continuous integration in DevOps work</yoast_metadesc>
       <excerpt>A conversation with Mikhail Аndrushkevich, Exadel's VP of Delivery, about the use and value of continuous integration in DevOps work</excerpt>
@@ -310,6 +345,7 @@
    <item>
       <title>That’s A Wrap! 2019 Exadel Reflections and Achievements</title>
       <date>Thu, 05 Dec 2019 03:12:04 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/thats-a-wrap-2019-exadel-reflections-and-achievements/</link>
       <yoast_metadesc>2019 has been nothing short of exceptional! As 2019 comes to an end, we wanted to recap what made it one of the strongest years yet for Exadel.</yoast_metadesc>
       <excerpt>2019 has been nothing short of exceptional! As 2019 comes to an end, we wanted to recap what made it one of the strongest years yet for Exadel. </excerpt>
@@ -319,6 +355,7 @@
    <item>
       <title>A Year of Achievement for Appery.io in 2019</title>
       <date>Wed, 11 Dec 2019 23:49:59 +0000</date>
+      <author>Nikita Basalaev</author>
       <link>https://www.exadel.com/news/a-year-of-achievement-for-appery-io-in-2019/</link>
       <yoast_metadesc>As we look back over the year for our low-code development platform Appery.io, we have to say we are pretty proud! New features, glowing reviews...</yoast_metadesc>
       <excerpt>As we look back over the year for our low-code development platform Appery.io, we have to say we are pretty proud! New features, glowing reviews...</excerpt>
@@ -328,6 +365,7 @@
    <item>
       <title>AEM Tip: Use an Automated Test Framework</title>
       <date>Sat, 14 Dec 2019 00:42:10 +0000</date>
+      <author>Maryna Shantur</author>
       <link>https://www.exadel.com/news/aem-tip-use-an-automated-test-framework/</link>
       <yoast_metadesc>This tip is about the process for our team in working on AEM projects using a dialog format to present the subject of test automation.</yoast_metadesc>
       <excerpt>This tip is about the process for our team in working on AEM projects using a dialog format to present the subject of test automation. </excerpt>
@@ -337,6 +375,7 @@
    <item>
       <title>Global Procurement Application: Designing a Catalog Module</title>
       <date>Tue, 17 Dec 2019 06:58:05 +0000</date>
+      <author>Sergey Derugo</author>
       <link>https://www.exadel.com/news/global-procurement-application-designing-a-catalog-module/</link>
       <yoast_metadesc>2nd in a series on our Global Procurement Application (GPA) solution, discussing the cloud catalog module</yoast_metadesc>
       <excerpt>2nd in a series on our Global Procurement Application (GPA) solution, discussing the cloud catalog module</excerpt>
@@ -346,6 +385,7 @@
    <item>
       <title>Our DevOps Toolbox: Consul</title>
       <date>Fri, 20 Dec 2019 00:38:14 +0000</date>
+      <author>Exadel Digital Transformation Team</author>
       <link>https://www.exadel.com/news/our-devops-toolbox-consul/</link>
       <yoast_metadesc>Consul provides service discovery, health checks, load balancing &amp; key/value storage for services &amp; applications. Find out the benefits we've seen using it.</yoast_metadesc>
       <excerpt>Consul provides service discovery, health checks, load balancing and key/value storage for services and applications. Find out the benefits we've seen using it for development and business.</excerpt>

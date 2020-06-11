@@ -37,7 +37,7 @@ wp_posts$linked_title <- gsub("\"", "\"\"", wp_posts$title) #escape the double q
 wp_posts$linked_title <- xl_hyperlink(wp_posts$link, name = wp_posts$linked_title)
 
 #order the columns and sort
-wp_posts <- select(wp_posts, linked_title, date, yoast_metadesc, excerpt, category, tags, url_path) %>% 
+wp_posts <- select(wp_posts, linked_title, author, date, yoast_metadesc, excerpt, category, tags, url_path) %>% 
    arrange(desc(date))
 
 # Posts by Categories worksheet --------------------------------------------
