@@ -18,7 +18,7 @@ if(!require(dplyr)) {install.packages("dplyr"); library(dplyr)} #select() group_
 if(!require(writexl)) {install.packages("writexl"); library(writexl)} #xl_hyperlink() write_xlsx()
 
 #start
-doc <- xmlParse("sample-wp-posts-info-extract.xml")
+doc <- xmlParse("extracted-info.xml")
 
 # Main worksheet listing all posts sorted by date -------------------------
 
@@ -88,5 +88,5 @@ write_xlsx(list(Main = wp_posts,
                 `Posts by Categories` = wp_categories,
                 `Category Count` = wp_categories_ranked,
                 `Posts by Tags` = wp_tags,
-                `Tag Count` = wp_tags_ranked), path="sample-posts-analyzed.xlsx")
+                `Tag Count` = wp_tags_ranked), path="posts-analyzed.xlsx")
 
