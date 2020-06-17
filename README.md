@@ -20,13 +20,13 @@ Finally, use R to make various summary, etc. tables that can be saved as workshe
 
 1. Manually export (or have someone export) current posts from the WP dashboard.
 ![](https://i.imgur.com/WySF0oS.png)<br>
-XML from WP: `sample-exported-from-wp.xml`
+XML from WP: `exported-from-wp.xml`
 1. Run an XSLT script on the exported XML.<br>
 Script: `flatten-wp-xml.xslt` <br>
-XML Output: `sample-wp-posts-info-extract.xml`
+XML Output: `extracted-info.xml`
 2. Run an R script on XML output to produce Excel output with analysis by category and tag and individual blog post titles hyperlinked.<br>
 Script: `categories-tags-from-wp-posts.R`<br>
-Excel Spreadsheet: `sample-posts-analyzed.xlsx` (worksheets: Main, Posts by Categories, Category Count, Posts by Tags, Tag Count)
+Excel Spreadsheet: `posts-analyzed.xlsx` (worksheets: Main, Posts by Categories, Category Count, Posts by Tags, Tag Count)
 
 ## Example Batch File ##
 
@@ -54,15 +54,16 @@ For this example batch file, I use the command-line script runner from the free 
 
 - Post title
 - Date published
-- Yoast SEO meta description
-- Excerpt
+- All-in-One meta desrciption (if used)
+- Yoast SEO meta description (if used)
+- Excerpt (if used)
 - Categories
 - Tags
 - Path part of the URL
 
 ## Notes
 
-There's no standard way to set what should be the meta description for a post in Wordpress that would be findable in the XML export file. SEO plug-ins have there own ways. In the example I've used the excerpt:extended tag, because it's based on a standard optional feature. I've also changed the script so it pulls in any Yoast SEO meta description since that's in the sample. 
+There's no standard way to set what should be the meta description for a post in Wordpress that would be findable in the XML export file. You'd think it would be the `description` element, but no that would be too easy. SEO plug-ins have there own ways. In the example, I've used the `excerpt:extended` tag, because it's based on a standard optional feature. The script also pulls in any Yoast SEO or All-in-One SEO meta description. 
 
 I know I could use the list of post URLs and just scrape that actual meta description tag, but that would require a lot of banging away at the site that I would prefer to avoid. Also it assumes a meta description always exists. 
 

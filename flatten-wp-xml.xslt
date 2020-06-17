@@ -25,10 +25,18 @@ Read selected Wordpress XML elements and organize in an XML that will be easy to
       <date><xsl:value-of select="pubDate"/></date>
       <author><xsl:value-of select="key('authors',dc:creator)/wp:author_display_name"/></author>
       <link><xsl:value-of select="link"/></link>
+
+       <!-- The meta description could be under a postmeta element (All-in-One) -->
+      <aio_metadesc>
+        <xsl:value-of select="wp:postmeta/wp:meta_key[text()='_aioseop_description']/following-sibling::node()/text()"/>
+		  </aio_metadesc>
+		  <!-- The meta description could be under a postmeta element (Yoast) -->
       <yoast_metadesc>
         <xsl:value-of select="wp:postmeta/wp:meta_key[text()='_yoast_wpseo_metadesc']/following-sibling::node()/text()"/>
 		  </yoast_metadesc>
+		  <!-- This excerpt is not necessarily picked up for the meta description, but if it's there it provides a summary of the post anyway --> 
 		  <excerpt><xsl:value-of select="excerpt:encoded"/></excerpt>
+		  
       <!-- For categories and tags use clunky XSLT 1.0 loops for concatenating strings -->
       <category><xsl:for-each select="category[@domain='category']">
         <xsl:value-of select="."/>

@@ -11,23 +11,25 @@ options(repos=r)
 })
 
 #packages required with functions used from those packages
-if(!require(XML)) {install.packages("XML"); library(XML)} #xmlParse() xmlTODataFrame() parseURI()
-if(!require(lubridate)) {install.packages("lubridate"); library(lubridate)} #parse_date_time()
+if(!require(XML)) {install.packages("XML"); library(XML)} #xmlParse xmlTODataFrame parseURI
+if(!require(lubridate)) {install.packages("lubridate"); library(lubridate)} #parse_date_time
 if(!require(tidyr)) {install.packages("tidyr"); library(tidyr)} #separate_rows
-if(!require(dplyr)) {install.packages("dplyr"); library(dplyr)} #select() group_by() summarise() arrange() mutate()
-if(!require(writexl)) {install.packages("writexl"); library(writexl)} #xl_hyperlink() write_xlsx()
+if(!require(dplyr)) {install.packages("dplyr"); library(dplyr)} #na_if select group_by summarise arrange mutate
+if(!require(writexl)) {install.packages("writexl"); library(writexl)} #xl_hyperlink write_xlsx
+if(!require(janitor))  {install.packages("janitor") ; library(janitor)} #remove_empty_cols
 
 #start
 doc <- xmlParse("extracted-info.xml")
 
 # Main worksheet listing all posts sorted by date -------------------------
 
-#grab the overall table of post metadata, fixing the date
+#grab the overall table of post metadata, set empty elements as NAs, and fix the date
 wp_posts <- xmlToDataFrame(nodes = getNodeSet(doc, "//item"), stringsAsFactors=FALSE) %>%
+   na_if("") %>% 
    mutate(date = as_date(parse_date_time(date, "adbYHMSz"))) %>%
    mutate(title = trimws(title)) 
 
-#add a column just showing the path only
+#add a column just showing the path
 wp_posts$url_path <- sapply(wp_posts$link, function(x) parseURI(x)$path)
 
 #create a column for output as linked text (URL, title) when the spreadsheet is
@@ -36,9 +38,11 @@ class(wp_posts$link) <- "hyperlink"
 wp_posts$linked_title <- gsub("\"", "\"\"", wp_posts$title) #escape the double quotes for the Excel hypertext formula
 wp_posts$linked_title <- xl_hyperlink(wp_posts$link, name = wp_posts$linked_title)
 
-#order the columns and sort
-wp_posts <- select(wp_posts, linked_title, author, date, yoast_metadesc, excerpt, category, tags, url_path) %>% 
-   arrange(desc(date))
+#order the columns, drop empty columns (NA's), and sort
+wp_posts <- select(wp_posts, linked_title, author, date, yoast_metadesc, aio_metadesc,
+                   excerpt, category, tags, url_path) %>% 
+            remove_empty("cols") %>% 
+            arrange(desc(date))
 
 # Posts by Categories worksheet --------------------------------------------
 
