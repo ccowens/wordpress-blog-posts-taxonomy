@@ -13,6 +13,8 @@ Read selected Wordpress XML elements and organize in an XML that will be easy to
 <!-- Set up an index of authors by the login to lookup the display name for listing as an author -->
 <xsl:key name="authors" match="wp:author" use="wp:author_login"/>
 
+<xsl:variable name="base_url" select="//wp:base_site_url"/>
+
 <xsl:template match="/">
   <posts>
     <xsl:apply-templates/>
@@ -25,7 +27,8 @@ Read selected Wordpress XML elements and organize in an XML that will be easy to
       <date><xsl:value-of select="pubDate"/></date>
       <author><xsl:value-of select="key('authors',dc:creator)/wp:author_display_name"/></author>
       <link><xsl:value-of select="link"/></link>
-      <edit_link><xsl:value-of select="guid"/></edit_link>
+      <post_domain><xsl:value-of select="$base_url"/></post_domain>
+      <post_number><xsl:value-of select="wp:post_id" /></post_number>
 
        <!-- The meta description could be under a postmeta element (All-in-One) -->
       <aio_metadesc>
