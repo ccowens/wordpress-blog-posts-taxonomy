@@ -23,26 +23,39 @@ doc <- xmlParse("extracted-info.xml")
 
 # Main worksheet listing all posts sorted by date -------------------------
 
-#grab the overall table of post metadata, set empty elements as NAs, and fix the date
+#Grab the overall table of post metadata, set empty elements as NAs, and fix the date
 wp_posts <- xmlToDataFrame(nodes = getNodeSet(doc, "//item"), stringsAsFactors=FALSE) %>%
    na_if("") %>% 
    mutate(date = as_date(parse_date_time(date, "adbYHMSz"))) %>%
    mutate(title = trimws(title)) 
 
-#add a column just showing the path
+#Add a column just showing the path
 wp_posts$url_path <- sapply(wp_posts$link, function(x) parseURI(x)$path)
 
-#create a column for output as linked text (URL, title) when the spreadsheet is
+#Create a column for output as linked text (URL, title) when the spreadsheet is
 #written
 class(wp_posts$link) <- "hyperlink"
-wp_posts$linked_title <- gsub("\"", "\"\"", wp_posts$title) #escape the double quotes for the Excel hypertext formula
+##escape the double quotes in titles for the Excel hypertext formula
+wp_posts$linked_title <- gsub("\"", "\"\"", wp_posts$title)
 wp_posts$linked_title <- xl_hyperlink(wp_posts$link, name = wp_posts$linked_title)
 
+#Create a column for output as "edit" text links linking to the URL for editing 
+#the post when the spreadsheet is written
+##piece together edit URL from fragments of "guid" from export XML
+wp_posts$edit_link <- paste0(wp_posts$post_domain, 
+                             "/wp-admin/post.php?post=", 
+                             wp_posts$post_number,
+                             "&action=edit")
+##make the edit links
+class(wp_posts$edit_link) <- "hyperlink"
+wp_posts$edit <- xl_hyperlink(wp_posts$edit_link, name = "edit")
+
+
 #order the columns, drop empty columns (NA's), and sort
-wp_posts <- select(wp_posts, linked_title, author, date, yoast_metadesc, aio_metadesc,
+wp_posts <- select(wp_posts, linked_title, edit, author, date, yoast_metadesc, aio_metadesc,
                    excerpt, category, tags, url_path) %>% 
-            remove_empty("cols") %>% 
-            arrange(desc(date))
+   remove_empty("cols") %>% 
+   arrange(desc(date))
 
 # Posts by Categories worksheet --------------------------------------------
 
