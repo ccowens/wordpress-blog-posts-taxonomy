@@ -53,6 +53,7 @@ For this example batch file, I use the command-line script runner from the free 
 ### Columns in the Main Sheet
 
 - Post title
+- Edit link
 - Date published
 - All-in-One meta desrciption (if used)
 - Yoast SEO meta description (if used)

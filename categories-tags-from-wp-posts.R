@@ -54,8 +54,8 @@ wp_posts$edit <- xl_hyperlink(wp_posts$edit_link, name = "edit")
 #order the columns, drop empty columns (NA's), and sort
 wp_posts <- select(wp_posts, linked_title, edit, author, date, yoast_metadesc, aio_metadesc,
                    excerpt, category, tags, url_path) %>% 
-   remove_empty("cols") %>% 
-   arrange(desc(date))
+            remove_empty("cols") %>% 
+            arrange(desc(date))
 
 # Posts by Categories worksheet --------------------------------------------
 
