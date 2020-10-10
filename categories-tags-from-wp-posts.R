@@ -19,7 +19,7 @@ if(!require(writexl)) {install.packages("writexl"); library(writexl)} #xl_hyperl
 if(!require(janitor))  {install.packages("janitor") ; library(janitor)} #remove_empty_cols
 
 #start
-doc <- xmlParse("extracted-info.xml")
+doc <- xmlParse("data/extracted-info.xml")
 
 # Main worksheet listing all posts sorted by date -------------------------
 
@@ -105,5 +105,5 @@ write_xlsx(list(Main = wp_posts,
                 `Posts by Categories` = wp_categories,
                 `Category Count` = wp_categories_ranked,
                 `Posts by Tags` = wp_tags,
-                `Tag Count` = wp_tags_ranked), path="posts-analyzed.xlsx")
+                `Tag Count` = wp_tags_ranked), path="data/posts-analyzed.xlsx")
 
